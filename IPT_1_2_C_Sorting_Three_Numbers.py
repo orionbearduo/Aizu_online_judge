@@ -8,3 +8,8 @@ Sample Output 1: 1 3 8
 sortingThreeNum = list(map(int, input().split()))
 sortingThreeNum.sort()
 print(sortingThreeNum[0], sortingThreeNum[1], sortingThreeNum[2])
+
+'''
+a = input().split()
+print(" ".join(sorted(a)))
+'''
