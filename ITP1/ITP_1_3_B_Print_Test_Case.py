@@ -10,7 +10,7 @@ Output
 For each dataset, print x and y in ascending order in a line. Put a single space between x and y.
 """
 while True:
-    x, y = map(int,input().split())
+    x, y = map(int, input().split())
     if x == 0 and y == 0:
         break
     if x > y:
