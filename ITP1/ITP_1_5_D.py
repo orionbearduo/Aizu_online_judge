@@ -32,3 +32,17 @@ An integer n is given in a line.
 Output
 Print the output result of the above program for given integer n.
 """
+n = int(input())
+
+for i in range(1, n+1):
+    if i % 3 == 0:
+        print(" " + str(i), end="")
+    else:
+        x = i
+        while(x):
+            if x % 10 == 3:
+                print(" " + str(i), end="")
+                break
+            x //= 10
+
+print()
