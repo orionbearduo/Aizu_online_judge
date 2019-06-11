@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80fa7596-b677-49a7-9fd9-4a505e33c6e6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ITP1/ITP_1_5_A.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ITP1/ITP_1_5_B.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,11 +23,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ITP1/ITP_1_5_A.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="9" lean-forward="true" selection-start-line="12" selection-end-line="17" selection-end-column="9" />
+            <state relative-caret-position="300">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ITP1/ITP_1_5_B.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
             </state>
           </provider>
         </entry>
@@ -56,6 +66,7 @@
         <option value="$PROJECT_DIR$/ITP1/ITP_1_4_C.py" />
         <option value="$PROJECT_DIR$/ITP1/ITP_1_4_D.py" />
         <option value="$PROJECT_DIR$/ITP1/ITP_1_5_A.py" />
+        <option value="$PROJECT_DIR$/ITP1/ITP_1_5_B.py" />
       </list>
     </option>
   </component>
@@ -163,12 +174,12 @@
       <workItem from="1560005937325" duration="1000" />
       <workItem from="1560008299380" duration="4512000" />
       <workItem from="1560083886964" duration="729000" />
-      <workItem from="1560178056377" duration="2091000" />
+      <workItem from="1560178056377" duration="3888000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11442000" />
+    <option name="totallyTimeSpent" value="13239000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
@@ -261,8 +272,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ITP1/ITP_1_5_A.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="9" lean-forward="true" selection-start-line="12" selection-end-line="17" selection-end-column="9" />
+        <state relative-caret-position="300">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ITP1/ITP_1_5_B.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
         </state>
       </provider>
     </entry>
