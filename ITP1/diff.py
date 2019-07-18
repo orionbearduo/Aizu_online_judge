@@ -26,8 +26,8 @@ if __name__ == '__main__':
                 result[adprodset_code.strip('\n')] = {'params': params}
         return result
 
-    before_params = dividing('/Users/icko/Documents/000/adprodset.txt')
-    after_params = dividing('/Users/icko/Documents/000/adprodset1.txt')
+    before_params = dividing('/Users/icko/Documents/000/diff_718/adprodsetbetabefore7181000')
+    after_params = dividing('/Users/icko/Documents/000/diff_718/adprodsetbetaafter718940')
 
     for k in set(before_params.keys()) - set(after_params.keys()):
         print('[Caution] ' + k + ' vanished!')
@@ -37,13 +37,38 @@ if __name__ == '__main__':
 
     for v in before_params.keys():
         before_obj = before_params[v]['params']
-        after_ojb = after_params[v]['params']
+        after_obj = after_params[v]['params']
         
-        if before_obj['html'] != after_ojb['html']:
+        if before_obj['html'] != after_obj['html']:
             print('Html in adprodset_code ' + v + ' is different')
+        else:
+            print(v + ' Html is OK')
+        print(after_obj['width'])
 
-    if before_params != after_params:
-        print("there is different")
+        if 'width' not in before_obj.keys():
+            print(v + ' width [key] is not exist')
+            continue
+        if before_obj['width'] != after_obj['width']:
+            print('Width in adprodset_code ' + v + ' is different')
+        else:
+            print(v + 'Width is OK')
+
+        if 'height' not in before_obj.keys():
+            print(v + ' height [key] is not exist')
+            continue
+        if before_obj['height'] != after_obj['height']:
+            print('Width in adprodset_code ' + v + ' is different')
+        else:
+            print(v + 'Height is OK')
+
+
+
+'''
+    if before_params == after_params:
+        print("OK!")
+    else:
+        print("There is different")
+'''
        # if before_obj['width'] != after_ojb['width']:
         #    print('Width in adprodset_code' + v + 'is different')
        # if before_obj['html'] != after_ojb['html']:
@@ -62,13 +87,13 @@ if __name__ == '__main__':
 
 
 
-    before_params = dividing('/Users/icko/Documents/000/adprodset.txt')
+    #before_params = dividing('/Users/icko/Documents/000/adprodset.txt')
     #print(before_params)
-    print("----------*****------------")
-    after_params = dividing('/Users/icko/Documents/000/adprodset1.txt')
+#    print("----------*****------------")
+    #after_params = dividing('/Users/icko/Documents/000/adprodset1.txt')
     #print(after_params)
 
-    print("********8--------********")
+#    print("********8--------********")
 
 
 
