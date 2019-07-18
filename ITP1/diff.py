@@ -26,8 +26,8 @@ if __name__ == '__main__':
                 result[adprodset_code.strip('\n')] = {'params': params}
         return result
 
-    before_params = dividing('/Users/icko/Documents/000/diff_718/adprodsetbetabefore7181000')
-    after_params = dividing('/Users/icko/Documents/000/diff_718/adprodsetbetaafter718940')
+    before_params = dividing('/Users/icko/Documents/000/adprodsetprodbefore718')
+    after_params = dividing('/Users/icko/Documents/000/adprodsetprodafter718')
 
     for k in set(before_params.keys()) - set(after_params.keys()):
         print('[Caution] ' + k + ' vanished!')
@@ -39,57 +39,29 @@ if __name__ == '__main__':
         before_obj = before_params[v]['params']
         after_obj = after_params[v]['params']
 
-        if before_obj['html'] != after_obj['html']:
-            print('Html in adprodset_code ' + v + ' is different')
+        if before_obj == after_obj:
+            print('Product [FreeTag] is no problem')
         else:
-            print(v + ' Html is OK')
+            if before_obj['html'] != after_obj['html']:
+                print('Html in adprodset_code ' + v + ' is different')
+            else:
+                print(v + ' Html is OK')
 
-        if 'width' not in before_obj.keys() or 'height' not in before_obj.keys():
-            print(v + ' width,height [key] is not exist\n')
-            continue
-        if before_obj['width'] != after_obj['width']:
-            print('Width in adprodset_code ' + v + ' is different')
-        else:
-            print(v + ' Width is OK')
+            if 'width' not in before_obj.keys() or 'height' not in before_obj.keys():
+                print(v + ' width,height [key] is not exist\n')
+                continue
+            if before_obj['width'] != after_obj['width']:
+                print('Width in adprodset_code ' + v + ' is different')
+            else:
+                print(v + ' Width is OK')
 
-        if before_obj['height'] != after_obj['height']:
-            print('Width in adprodset_code ' + v + ' is different')
-        else:
-            print(v + ' Height is OK')
+            if before_obj['height'] != after_obj['height']:
+                print('Width in adprodset_code ' + v + ' is different')
+            else:
+                print(v + ' Height is OK')
 
-
-
-'''
-    if before_params == after_params:
-        print("OK!")
-    else:
-        print("There is different")
-'''
-       # if before_obj['width'] != after_ojb['width']:
-        #    print('Width in adprodset_code' + v + 'is different')
-       # if before_obj['html'] != after_ojb['html']:
-        #    print('Html in adprodset_code' + v + 'is different')
-        #if before_obj['html']
-
-
-    #for v in before_params.values()
-        
-            
-
-    #def compare(before_params, after_params):
-     #   for k in before_params:
-
-
-
-
-
-    #before_params = dividing('/Users/icko/Documents/000/adprodset.txt')
-    #print(before_params)
-#    print("----------*****------------")
-    #after_params = dividing('/Users/icko/Documents/000/adprodset1.txt')
-    #print(after_params)
-
-#    print("********8--------********")
+            if before_obj == after_obj:
+                print('Product [FreeTag] is no problem')
 
 
 
