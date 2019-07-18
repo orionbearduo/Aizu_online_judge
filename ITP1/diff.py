@@ -38,28 +38,24 @@ if __name__ == '__main__':
     for v in before_params.keys():
         before_obj = before_params[v]['params']
         after_obj = after_params[v]['params']
-        
+
         if before_obj['html'] != after_obj['html']:
             print('Html in adprodset_code ' + v + ' is different')
         else:
             print(v + ' Html is OK')
-        print(after_obj['width'])
 
-        if 'width' not in before_obj.keys():
-            print(v + ' width [key] is not exist')
+        if 'width' not in before_obj.keys() or 'height' not in before_obj.keys():
+            print(v + ' width,height [key] is not exist\n')
             continue
         if before_obj['width'] != after_obj['width']:
             print('Width in adprodset_code ' + v + ' is different')
         else:
-            print(v + 'Width is OK')
+            print(v + ' Width is OK')
 
-        if 'height' not in before_obj.keys():
-            print(v + ' height [key] is not exist')
-            continue
         if before_obj['height'] != after_obj['height']:
             print('Width in adprodset_code ' + v + ' is different')
         else:
-            print(v + 'Height is OK')
+            print(v + ' Height is OK')
 
 
 
