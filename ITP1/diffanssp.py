@@ -1,5 +1,3 @@
-import pandas as pd
-
 
 if __name__ == '__main__':
 
@@ -15,7 +13,7 @@ if __name__ == '__main__':
             for i in a:
                 b = i.split('')
                 data[b[0]] = b[1]
-            if len(data) != 0 and data['adprod_type'] == '6':
+            if len(data) != 0 and data['adprod_type'] == '12':
 
                 subdata = data['adprod_params']
                 c = subdata.split('')
@@ -26,8 +24,8 @@ if __name__ == '__main__':
                 result[adprodset_code.strip('\n')] = {'params': params}
         return result
 
-    before_params = dividing('/Users/icko/Documents/000/stg/adprodsetbetabefore7181930')
-    after_params = dividing('/Users/icko/Documents/000/stg/adprodsetbetaafter7181930')
+    before_params = dividing('/Users/icko/Documents/000/anssp/adprodsetbetabefore7222155')
+    after_params = dividing('/Users/icko/Documents/000/anssp/adprodsetbetaafter7222202')
 
     for k in set(before_params.keys()) - set(after_params.keys()):
         print('[Caution] ' + k + ' vanished!')
@@ -40,13 +38,12 @@ if __name__ == '__main__':
         after_obj = after_params[v]['params']
 
         if before_obj == after_obj:
-            print('Product [FreeTag] is no problem')
+            print('Product [Anssp] is no problem')
         else:
-            if before_obj['html'] != after_obj['html']:
+            if before_obj['position'] != after_obj['position']:
                 print('Html in adprodset_code ' + v + ' is different')
             else:
-                print(v + ' Html is OK')
-
+                print(v + ' Position is OK')
             if 'width' not in before_obj.keys() or 'height' not in before_obj.keys():
                 print(v + ' width,height [key] is not exist\n')
                 continue
@@ -59,5 +56,3 @@ if __name__ == '__main__':
                 print('Width in adprodset_code ' + v + ' is different')
             else:
                 print(v + ' Height is OK')
-
-
