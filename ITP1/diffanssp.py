@@ -1,6 +1,6 @@
 
 if __name__ == '__main__':
-
+# anssp
     def dividing(file_name):
         result = {}
         all_lines = open(file_name).readlines()
