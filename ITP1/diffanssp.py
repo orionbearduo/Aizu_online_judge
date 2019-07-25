@@ -24,8 +24,8 @@ if __name__ == '__main__':
                 result[adprodset_code.strip('\n')] = {'params': params}
         return result
 
-    before_params = dividing('/Users/icko/Documents/000/anssp/adprodsetbetabefore7222155')
-    after_params = dividing('/Users/icko/Documents/000/anssp/adprodsetbetaafter7222202')
+    before_params = dividing('/Users/icko/Documents/000/anssp/adprodsetprodbefore7241200')
+    after_params = dividing('/Users/icko/Documents/000/anssp/adprodsetprodafter7241200')
 
     for k in set(before_params.keys()) - set(after_params.keys()):
         print('[Caution] ' + k + ' vanished!')
@@ -41,7 +41,7 @@ if __name__ == '__main__':
             print('Product [Anssp] is no problem')
         else:
             if before_obj['position'] != after_obj['position']:
-                print('Html in adprodset_code ' + v + ' is different')
+                print('Position in adprodset_code ' + v + ' is different')
             else:
                 print(v + ' Position is OK')
             if 'width' not in before_obj.keys() or 'height' not in before_obj.keys():

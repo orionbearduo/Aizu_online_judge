@@ -26,8 +26,8 @@ if __name__ == '__main__':
                 result[adprodset_code.strip('\n')] = {'params': params}
         return result
 
-    before_params = dividing('/Users/icko/Documents/000/stg/adprodsetbetabefore7181930')
-    after_params = dividing('/Users/icko/Documents/000/stg/adprodsetbetaafter7181930')
+    before_params = dividing('/Users/icko/Documents/000/freetag/adprodsetprodbefore724950')
+    after_params = dividing('/Users/icko/Documents/000/freetag/adprodsetprodafter724950')
 
     for k in set(before_params.keys()) - set(after_params.keys()):
         print('[Caution] ' + k + ' vanished!')
