@@ -24,8 +24,8 @@ if __name__ == '__main__':
                 result[adprodset_code.strip('\n')] = {'params': params}
         return result
 
-    before_params = dividing('/Users/icko/Documents/000/anssp/adprodsetprodbefore7241200')
-    after_params = dividing('/Users/icko/Documents/000/anssp/adprodsetprodafter7241200')
+    before_params = dividing('/Users/icko/Documents/000/anssp/stg/adprodsetbetabefore861600')
+    after_params = dividing('/Users/icko/Documents/000/anssp/stg/adprodsetbetaafter861600')
 
     for k in set(before_params.keys()) - set(after_params.keys()):
         print('[Caution] ' + k + ' vanished!')
@@ -37,7 +37,8 @@ if __name__ == '__main__':
         before_obj = before_params[v]['params']
         after_obj = after_params[v]['params']
 
-        if before_obj == after_obj:
+        if before_obj['position'] == after_obj['position'] and before_obj['height'] == after_obj['height'] and \
+                before_obj['width'] == after_obj['width'] and before_obj['id'] == after_obj['id']:
             print('Product [Anssp] is no problem')
         else:
             if before_obj['position'] != after_obj['position']:
@@ -56,3 +57,7 @@ if __name__ == '__main__':
                 print('Width in adprodset_code ' + v + ' is different')
             else:
                 print(v + ' Height is OK')
+            if before_obj['id'] != after_obj['id']:
+                print('id in adprodset_code ' + v + ' is different')
+            else:
+                print(v + ' id is OK')
