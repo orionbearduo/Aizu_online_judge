@@ -36,7 +36,7 @@ if __name__ == '__main__':
     for v in before_params.keys():
         before_obj = before_params[v]['params']
         after_obj = after_params[v]['params']
-        if before_obj['api_timeout'] == after_obj['api_timeout'] and before_obj['height'] == after_obj['height'] and \
+        if before_obj['height'] == after_obj['height'] and \
            before_obj['width'] == after_obj['width'] and before_obj['callback'] == after_obj['callback'] and \
            before_obj['creative_options'] == after_obj['creative_options'] and before_obj['js_file'] == after_obj['js_file'] \
                 and before_obj['zone_id'] == after_obj['zone_id']:

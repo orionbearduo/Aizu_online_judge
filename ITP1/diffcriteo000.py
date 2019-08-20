@@ -41,7 +41,8 @@ if __name__ == '__main__':
             continue
         if before_obj['creative_options'] == after_obj['creative_options'] and before_obj['height'] == after_obj['height'] and \
                 before_obj['width'] == after_obj['width'] and before_obj['callback'] == after_obj['callback'] and \
-                before_obj['zone_id'] == after_obj['zone_id'] and before_obj['js_file'] == after_obj['js_file']:
+                before_obj['zone_id'] == after_obj['zone_id'] and before_obj['js_file'] == after_obj['js_file'] and \
+                (before_obj['api_timeout'] == after_obj['api_timeout'] or (before_obj['api_timeout'] == '' and after_obj['api_timeout'] == '0')):
             print('Product [Criteo] is no problem')
         else:
             if before_obj['creative_options'] != after_obj['creative_options']:
