@@ -54,7 +54,7 @@ if __name__ == '__main__':
             print('js_file in adprodset_code ' + v + ' is different')
         elif before_obj['position'] != after_obj['position']:
             print('position in adprodset_code ' + v + ' is different')
-        elif 'member' in before_obj.keys() and'member' in after_obj.keys():
+        elif 'member' in before_obj.keys() and 'member' in after_obj.keys():
             if before_obj['member'] != after_obj['member']:
                 print('member in adprodset_cod' + v + ' is different')
     print('*********************************')
