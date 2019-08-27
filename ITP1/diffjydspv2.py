@@ -1,6 +1,5 @@
-
 if __name__ == '__main__':
-# yjdspv2
+    # yjdspv2
     def dividing(file_name):
         result = {}
         all_lines = open(file_name).readlines()
@@ -33,7 +32,7 @@ if __name__ == '__main__':
     for k in set(after_params.keys()) - set(before_params.keys()):
         print('[Info] ' + k + ' is added!')
 
-    for v in before_params.keys():
+    for v in before_params.keys() & after_params.keys():
         before_obj = before_params[v]['params']
         after_obj = after_params[v]['params']
 
