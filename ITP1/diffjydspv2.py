@@ -24,8 +24,8 @@ if __name__ == '__main__':
                 result[adprodset_code.strip('\n')] = {'params': params}
         return result
 
-    before_params = dividing('/Users/icko/Documents/000/yjdspv2/stg/adprodsetbetabefore8211930')
-    after_params = dividing('/Users/icko/Documents/000/yjdspv2/stg/adprodsetbetaafter8211930')
+    before_params = dividing('/Users/icko/Documents/000/yjdspv2/stg/adprodsetprodbefore8261600')
+    after_params = dividing('/Users/icko/Documents/000/yjdspv2/stg/adprodsetprodafter8261600')
 
     for k in set(before_params.keys()) - set(after_params.keys()):
         print('[Caution] ' + k + ' vanished!')
@@ -38,7 +38,7 @@ if __name__ == '__main__':
         after_obj = after_params[v]['params']
 
         if 'api_timeout' not in before_obj.keys() and after_obj['api_timeout'] == '0':
-            print("adprodset_code " + v + " api_timeout [key] not exists in params but equals '0' in Table ds_adprodset_Yjdspv2")
+            print("adprodset_code " + v + " api_timeout [key] not exists in params but equals '0' in Table ds_adprodset_yjdspv2")
             continue
         if before_obj['creative_options'] == after_obj['creative_options'] and before_obj['height'] == after_obj['height'] and \
                 before_obj['width'] == after_obj['width'] and before_obj['callback'] == after_obj['callback'] and \
